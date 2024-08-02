@@ -1,0 +1,39 @@
+# Made by XiaoJibaZhanshi
+# Player head placeholders: {player-hp}, {players-nearby}, {player-name}
+# Actionbar placeholders: {count-down}
+
+fight-start:
+  actionbar: "&a&lThe fight starts in: &c{count-down}" # " " to disable
+  sound: true # Just a basic count-down sound
+  invulnerable-time-seconds: 3
+
+gui:
+  size: 9
+  title: "&7Wild PvP Queue"
+  player-head:
+    hide-tooltip: true
+    name: "&e{player-name}"
+    lore:
+      - "Placeholders: "
+      - "{player-hp}"
+      - "{players-nearby}"
+  queue-button:
+    slot: 8
+    before-queue-join:
+      queue-action: join
+      item:
+        name: "&aJoin the queue"
+        material: GREEN_STAINED_GLASS_PANE
+        hide-tooltip: true
+        lore:
+          - ""
+          - "&7I left this for you to configure"
+    after-queue-join:
+      queue-action: leave
+      item:
+        name: "&cLeave the queue"
+        material: RED_STAINED_GLASS_PANE
+        hide-tooltip: true
+        lore:
+          - ""
+          - "&7I left this for you to configure"

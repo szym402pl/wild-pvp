@@ -1,0 +1,10 @@
+name: WildPvP
+version: '1'
+main: me.xiaojibazhanshi.wildpvp.WildPvP
+api-version: '1.20'
+authors: [ XiaoJibaZhanshi ]
+description: A wild pvp plugin
+commands:
+  pvp:
+    description: Let the fights commence!
+    usage: /pvp
